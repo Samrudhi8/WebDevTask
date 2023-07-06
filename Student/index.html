@@ -1,0 +1,364 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student section</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="title">
+            <h1>ITERNATIONAL INSTITUTE OF TECNOLOGY</h1>
+            <p>STUDENT SECTION</p>
+          </div>
+          <div class="log-btn"><a href="">Log out</a></div>
+        </div>
+      </header>
+      <div class="modal-update-delete">
+        <div class="exit-btn">
+          <button class="update-delete-exit">&times</button>
+        </div>
+        <div class="btn">
+          <button class="go-update">UPDATE</button>
+          <button class="go-delete">MORE INFO</button>
+        </div>
+      </div>
+      <div class="modal-add">
+        <div class="title-exit">
+          <h1>Add student</h1>
+          <button class="exit">&times</button>
+          <button class="update-exit">&times</button>
+        </div>
+        <form class="add-form" action="index.html" method="post">
+          <div class="form-field">
+            <input type="text" name="studentId" value="" placeholder="Student id">
+          </div>
+          <div class="form-field">
+            <input type="text" name="firstname" value="" placeholder="First name">
+          </div>
+          <div class="form-field">
+            <input type="text" name="lastname" value="" placeholder="Last name">
+          </div>
+          <div class="form-field gender-field">
+            <div class="gender-field-wrap">
+              <span class="label-male">Male</span>
+              <input type="radio" name="male" value="male">
+            </div>
+            <div class="gender-field-wrap">
+              <span class="label-female">Female</span>
+              <input type="radio" name="female" value="female">
+            </div>
+          </div>
+          <div class="form-field birthday-field">
+            <span>Birthday</span>
+              <select name="month" id="month-selection">
+                <option value="">Month</option>
+                <option value="01">Jan</option>
+                <option value="02">Feb</option>
+                <option value="03">Mar</option>
+                <option value="04">Apr</option>
+                <option value="05">May</option>
+                <option value="06">Jun</option>
+                <option value="07">Jul</option>
+                <option value="08">Aug</option>
+                <option value="09">Sep</option>
+                <option value="10">Oct</option>
+                <option value="11">Nov</option>
+                <option value="12">Dec</option>
+              </select>
+              <select name="day" id="day-selection">
+                <option value="">Day</option>
+              </select>
+              <select name="year" id="year-selection">
+                <option value="">Year</option>
+              </select>
+          </div>
+          <div class="form-field course-field">
+            <select class="course" name="course">
+              <option value="computer">Computer Engineering</option>
+              <option value="civil">Civil Engineering</option>
+              <option value="chemical">Chemical Engineering</option>
+              <option value="electrical">Electrical Engineering</option>
+              <option value="electronics">Electronics Engineering</option>
+            </select>
+          </div>
+          <div class="add-btn-save">
+            <input type="submit" name="addstudent" value="Add">
+          </div>
+        </form>
+      </div>
+      <div class="overlay no-block">
+      </div>
+      <div class="go-update-overlay">
+      </div>
+      <main>
+        <div class="con">
+          <div class="search">
+            <form class="search-wrap">
+              <input type="text" name="search" class="search-student" placeholder="search student...">
+              <input type="submit" class="search-btn" value="Search">
+            </form>
+            <form class="filter-wrap">
+              <div class="male-wrap">
+                <span>Male</span>
+                <input type="radio" class="radio-male" name="gender" value="male">
+              </div>
+              <div class="female-wrap">
+                <span>Female</span>
+                <input type="radio" class="radio-female" name="gender" value="female">
+              </div>
+              <div class="course">
+                <select name="course" id="course">
+                  <option value="computer">Computer Engineering</option>
+                  <option value="civil">Civil Engineering</option>
+                  <option value="chemical">Chemical Engineering</option>
+                  <option value="electrical">Electrical Engineering</option>
+                  <option value="electronics">Electronics Engineering</option>
+                </select>
+              </div>
+              <div class="add-student">
+                <div class="add-btn">+</div>
+              </div>
+            </form>
+          </div>
+           <div class="thead">
+                <div class="tr">
+                  <span class="th">Student ID</span>
+                  <span class="th">First name</span>
+                  <span class="th">Last name</span>
+                  <span class="th">Gender</span>
+                  <span class="th">Birthdate</span>
+                  <span class="th">Course</span>
+                  <span class="th">Achievments</span>
+                </div>
+           </div>
+           <div class="container">
+            <table>
+              <tbody class="table-body">
+                <tr class="data-row">
+                  <td class="data">B420001</td>
+                  <td class="data">Aanand</td>
+                  <td class="data">singh</td>
+                  <td class="data">M</td>
+                  <td class="data">2001-12-20</td>
+                  <td class="data">Computer Engineer</td>
+                  <td class="data">gsoc'20</td>
+                </tr>
+                <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <tr class="data-row">
+                    <td class="data">B420002</td>
+                    <td class="data">Aanand</td>
+                    <td class="data">kumar</td>
+                    <td class="data">M</td>
+                    <td class="data">2001-12-20</td>
+                    <td class="data">Computer Engineer</td>
+                    <td class="data">gsoc'20</td>
+                  </tr>
+                  <script src="script.js"></script>
+                  
+                
+    
+</body>
+</html>
